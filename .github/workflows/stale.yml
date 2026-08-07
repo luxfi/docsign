@@ -1,8 +1,10 @@
 name: 'Mark Stale Issues and PRs'
 
+# NO cron, same reason: `runs-on: ubuntu-latest` matches no runner on
+# git.hanzo.ai, so every eight hours this queued a job that never started.
+# It also acts on GitHub issues, and the canonical repo is the forge.
 on:
-  schedule:
-    - cron: '0 */8 * * *'
+  workflow_dispatch:
 
 jobs:
   stale:

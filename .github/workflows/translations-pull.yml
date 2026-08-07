@@ -2,9 +2,15 @@
 
 name: 'Pull translations'
 
+# NO cron. This job is `runs-on: ubuntu-latest` and CI here is native on
+# git.hanzo.ai, which has no such runner — an unmatched label does not error on
+# this forge, it QUEUES until the job is cancelled. Every two hours it produced
+# a job that could not start and reported nothing: 12 stuck in a day.
+#
+# Dispatch and workflow_call stay, so pulling translations is still one click
+# when somebody wants it. Give it a runner from our own pool (lux-build-amd64)
+# before putting a schedule back.
 on:
-  schedule:
-    - cron: '0 */2 * * *' # Every two hours.
   workflow_dispatch:
   workflow_call:
 
