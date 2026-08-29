@@ -64,7 +64,7 @@
   ],
   "dependencies": {
     "@documenso/pdf-sign": "^0.1.0",
-    "@documenso/prisma": "^0.0.0",
+    "@documenso/prisma": "*",
     "@lingui/core": "^6.6.0",
     "inngest-cli": "^1.44.0",
     "luxon": "^3.7.2",
