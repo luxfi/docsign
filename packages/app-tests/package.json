@@ -12,14 +12,14 @@
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "@playwright/test": "^1.18.1",
-    "@types/node": "^20.8.2",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "26.4.0",
     "@documenso/lib": "*",
     "@documenso/prisma": "*",
     "@documenso/web": "*",
     "pdf-lib": "^1.17.1"
   },
   "dependencies": {
-    "start-server-and-test": "^2.0.1"
+    "start-server-and-test": "^3.0.12"
   }
 }

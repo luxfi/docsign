@@ -21,18 +21,18 @@
     "seed": "tsx ./seed-database.ts"
   },
   "dependencies": {
-    "@prisma/client": "5.4.2",
-    "kysely": "^0.27.3",
-    "prisma": "5.4.2",
-    "prisma-extension-kysely": "^2.1.0",
-    "ts-pattern": "^5.0.6"
+    "@prisma/client": "^7.10.0",
+    "kysely": "^0.29.5",
+    "prisma": "^8.0.0-rc.12",
+    "prisma-extension-kysely": "^4.0.0",
+    "ts-pattern": "^5.9.0"
   },
   "devDependencies": {
-    "dotenv": "^16.3.1",
-    "dotenv-cli": "^7.3.0",
-    "prisma-kysely": "^1.8.0",
-    "tsx": "^4.11.0",
-    "typescript": "5.2.2",
-    "zod-prisma-types": "^3.1.8"
+    "dotenv": "^17.4.2",
+    "dotenv-cli": "^11.0.0",
+    "prisma-kysely": "^3.2.1",
+    "tsx": "^4.23.12",
+    "typescript": "7.0.2",
+    "zod-prisma-types": "^3.3.11"
   }
 }
